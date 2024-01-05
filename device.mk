@@ -19,6 +19,10 @@ DEVICE_PACKAGE_OVERLAYS += device/bq/zangyapro/overlay
 
 include device/bq/sdm660-common/sdm660.mk
 
+# Bluetooth
+PRODUCT_PROPERTY_OVERRIDES += \
+    bluetooth.device.default_name=BQ Aquaris X2 Pro
+
 # ZRAM
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.config.zram=true \
